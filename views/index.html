@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitbro Basic NodeJs API</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="basicnodejsapi">BasicNodeJsAPI</h1>
+    <p>Consist 5 routes using 4 basic HTTP Methods</p>
+    <ol>
+      <li>POST api/users - Add a user</li>
+      <li>GET api/users - Get all the users</li>
+      <li>GET api/users/:id - Get User with specific ID</li>
+      <li>PUT api/users/:id - Update User with specific ID</li>
+      <li>DELETE api/users/:id - Delete User with specific ID</li>
+    </ol>
+    <p>User has the following structure:</p>
+    <p>
+      {<br />
+      &nbsp;&nbsp;&nbsp;&nbsp; username: String,<br />
+      &nbsp;&nbsp;&nbsp;&nbsp; userId: String,<br />
+      &nbsp;&nbsp;&nbsp;&nbsp; email: String<br />}
+    </p>
+    <blockquote>
+      <ul>
+        <li>Only username and email can be updated.</li>
+      </ul>
+    </blockquote>
+    <p>Backend: NodeJs + express<br />DataBase: MongoDB Atlas</p>
+  </body>
+</html>

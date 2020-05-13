@@ -13,6 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(upload.array());
 
 connectDB();
+app.use("/", express.static("./views"));
 app.use("/api", router);
 
 app.listen(PORT);
